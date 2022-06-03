@@ -1,4 +1,4 @@
-package callThread;
+package callthread;
 import java.util.concurrent.Callable;
 
 public class MyCallable implements Callable<String> {
@@ -8,11 +8,11 @@ public class MyCallable implements Callable<String> {
     public String call() throws Exception {
 
             while (i < 20){
-                System.out.printf("Я %s .Всем привет!\n",Thread.currentThread().getName());
+                System.out.printf("РЇ %s .Р’СЃРµРј РїСЂРёРІРµС‚!\n",Thread.currentThread().getName());
                 i++;
                 Thread.sleep(1000);
             }
 
-        return "Количество сообщений " + i;
+        return "РљРѕР»РёС‡РµСЃС‚РІРѕ СЃРѕРѕР±С‰РµРЅРёР№ " + i;
     }
 }
